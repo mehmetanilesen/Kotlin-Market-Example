@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="73dp"
+    android:layout_height="122dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="21dp"
+    android:layout_marginEnd="18dp"
+    >
+
+    <TextView
+        android:id="@+id/TextViewBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/dm_sans"
+        android:gravity="center"
+        android:text="Marka"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productClickButton" />
+
+    <TextView
+        android:id="@+id/TextViewProdcutName"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:fontFamily="@font/dm_sans"
+        android:gravity="center"
+        android:text="Ürün adı"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewBrand" />
+
+    <TextView
+        android:id="@+id/TextViewCost"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/dm_sans"
+        android:gravity="center"
+        android:text="$11,90"
+        android:textColor="@color/norange"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewProdcutName" />
+
+    <TextView
+        android:id="@+id/textViewShaper"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/menu_grid_radius15dp_drawable"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/productClickButton"
+        app:layout_constraintEnd_toEndOf="@+id/productClickButton"
+        app:layout_constraintStart_toStartOf="@+id/productClickButton"
+        app:layout_constraintTop_toTopOf="@+id/productClickButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/productClickButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/image_drawable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addProdcutButtonGrid"
+        android:layout_width="14dp"
+        android:layout_height="17dp"
+        android:background="@drawable/plus_sign_grid_drawable"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/productClickButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="@+id/productClickButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

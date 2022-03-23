@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="86dp">
+
+    <TextView
+        android:id="@+id/TextViewProductTxtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:text="Ürünler"
+        android:textColor="@color/ngreen"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/greenline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backbutton_top_bar"
+        android:layout_width="13dp"
+        android:layout_height="24.25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="21.75dp"
+        android:background="@drawable/back_arrow"
+        app:layout_constraintBottom_toTopOf="@+id/greenline"
+        app:layout_constraintEnd_toStartOf="@+id/TextViewProductTxtTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/basketImageView"
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/greenline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/TextViewProductTxtTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/basket_drawable" />
+
+    <TextView
+        android:id="@+id/TextViewTotalCost"
+        android:layout_width="0dp"
+        android:layout_height="14dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/basket_budget_radius3dp_ngreen_drawable"
+        android:fontFamily="@font/dm_sans_bold"
+        android:gravity="center"
+        android:paddingStart="1dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="1dp"
+        android:scrollbars="horizontal"
+        android:scrollHorizontally="true"
+        android:text="$00.00"
+        android:textColor="@color/norange"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/greenline"
+        app:layout_constraintEnd_toEndOf="@+id/basketImageView"
+        app:layout_constraintHorizontal_bias="0.00"
+        app:layout_constraintStart_toStartOf="@+id/basketImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/greenline"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="@color/ngreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/enterance_top_nav_bar"
+        android:layout_width="0dp"
+        android:layout_height="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewPhoneNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="244dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:text="@string/phoneNo"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_radius10dp_drawable"
+                android:ems="10"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:hint="@string/phoneNoHint"
+                android:inputType="textPersonName"
+                android:paddingStart="20dp"
+                android:paddingTop="17dp"
+                android:paddingBottom="20dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:text="@string/password"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordInputEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_radius10dp_drawable"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/black"
+                tools:layout_editor_absoluteX="-142dp"
+                tools:layout_editor_absoluteY="214dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="#00ffffff"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:paddingStart="20dp"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/enterButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/button_orange_radius8dp_drawable"
+                android:fontFamily="@font/dm_sans_bold"
+                android:layout_marginTop="68dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="134dp"
+                android:paddingTop="13dp"
+                android:paddingEnd="133dp"
+                android:paddingBottom="14dp"
+                android:text="@string/enter"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/withoutmemberButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/button_orange_radius8dp_drawable"
+                android:fontFamily="@font/dm_sans_bold"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="81dp"
+                android:paddingTop="13dp"
+                android:paddingEnd="79dp"
+                android:paddingBottom="13dp"
+                android:text="@string/nomember"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

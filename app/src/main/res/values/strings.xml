@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Exam1</string>
+    <string name="enteranceTitle">Giriş</string>
+    <string name="phoneNo">Telefon Numarası</string>
+    <string name="phoneNoHint">Cep telefonu</string>
+    <string name="nomember">Uye olmadan devam et</string>
+    <string name="enter">Giriş Yap</string>
+    <string name="password">Şifre</string>
+</resources>
